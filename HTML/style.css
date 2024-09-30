@@ -750,6 +750,38 @@ a {
 	}
 }
 
+.event-content {
+	padding: 0 15px;
+	/* Thêm khoảng cách bên trong */
+	margin: 0 auto;
+	/* Căn giữa nếu muốn */
+	max-width: 90%;
+	/* Đảm bảo nội dung không vượt quá 90% độ rộng của cột */
+}
+
+.event-content {
+	padding: 0 15px;
+	/* Thêm khoảng cách bên trong thẻ div */
+	margin: 0 auto;
+	/* Căn giữa nếu muốn */
+	max-width: 90%;
+	/* Đảm bảo nội dung không vượt quá 90% độ rộng của cột */
+	box-sizing: border-box;
+	/* Đảm bảo padding không làm tăng kích thước tổng thể */
+}
+
+img {
+	max-width: 100%;
+	/* Đảm bảo hình ảnh không vượt quá 100% độ rộng của phần tử chứa */
+	height: auto;
+	/* Đảm bảo tỷ lệ hình ảnh không bị thay đổi */
+	display: block;
+	/* Loại bỏ khoảng trống dưới hình ảnh nếu có */
+	margin: 0 auto;
+	/* Căn giữa hình ảnh nếu cần */
+}
+
+
 /* -- min-width: 768 to max-width: 991 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.top-header .top-icons {
@@ -765,6 +797,15 @@ a {
 		font-size: 40px;
 	}
 
+	h3 {
+		text-align: center;
+		/* Căn giữa văn bản của tất cả các thẻ h3 trên màn hình nhỏ */
+	}
+
+	.entry-title {
+		text-align: center;
+		/* Căn giữa văn bản của thẻ h3 có class entry-title trên màn hình nhỏ */
+	}
 }
 
 /* --  max-width: 639 */
